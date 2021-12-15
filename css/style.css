@@ -4,7 +4,7 @@
     --primario: rgb(99, 97, 97);
     --primarioOscuro: rgba(0, 0, 0, 0.637);
     --secundario: #FFCE00;
-    --secundarioOscuro: #FFCE00;
+    --secundarioOscuro: #c49c00;
     --blanco: #FFF;
     --negro: #000;
 
@@ -277,3 +277,93 @@ h3{
         flex-direction:column;
     }
 }   
+
+/* producto camisa */
+
+.camisa{
+    grid-template-columns: 1fr 1fr;
+    padding:2rem;
+}
+
+.imagen__camisa {
+    grid-row: 1/3;
+    text-align:center;
+}
+.camisa__img{
+    width: 80%;
+    
+}
+
+@media (max-width: 809px) {
+    .camisa{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .formulario__cantidad{
+        appearance: none;
+        margin-left: 3rem;
+    
+    }
+    
+}
+
+.camisa .camisa__contenido{
+    text-align:justify;
+    margin:1.5rem 0 0 0 ;
+}
+
+.formulario{
+    grid-template-columns:1fr 1fr ;    
+    font-family: var(--Staatliches);
+}
+.formulario__campo{
+    text-align:center;
+    border:0.5rem solid var(--primarioOscuro);
+    background-color: var(--primario);
+    height:6rem;
+    color: var(--blanco);
+    appearance: none;
+    width: 90%;
+    font-size: 3rem;
+    
+}
+.formulario__cantidad{
+    appearance: none;
+    margin-left: 2rem;
+
+}
+
+.formulario__submit{
+    height:6rem;
+    cursor:pointer;
+    background-color: var(--secundario);
+    font-family: var(--Staatliches);
+    transition: background-color .3s ease;
+    font-size: 3rem;
+    border:none;
+    grid-column: 1/3;
+    
+}
+.formulario__submit:hover{
+    background-color:var(--secundarioOscuro);
+}
+
+@media (max-width: 809px) {
+
+    .formulario__cantidad{
+        appearance: none;
+        margin-left: 2.5rem;
+        color: var(--blanco);
+    
+    }
+    
+}
+@media (max-width: 420px) {
+
+    .formulario__cantidad{
+        appearance: none;
+        margin-left: 1.5rem;
+    }
+}

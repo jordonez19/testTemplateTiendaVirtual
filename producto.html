@@ -24,22 +24,36 @@
             <a  class="navbar__enlace  navbar__enlace--activo"href="nosotros.html">Nosotros</a>
         </nav>
 
-        <main class="container" >
-            <h1>Nuestros Productos</h1>
+        <main class="container grid " >
+            <h1>React Js</h1>
+            <div class="camisa grid">
+                <div class="imagen__camisa">
+                    <img src="/img/3.jpg" alt="" class="camisa__img">
+                </div>
+
+                <div class="camisa__contenido">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae dolor esse est, ullam illo suscipit autem labore magnam et enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ipsa cumque, cum incidunt, soluta quia minus dignissimos dolorum quas sed deserunt nisi? Cupiditate dolor laborum corporis et itaque aut omnis.</p>
+                </div>
+
+                <form action="/producto.html" class="formulario grid ">
+                    <select class="formulario__campo formulario__select " >
+                            <option disabled selected value="" placeholder='Talla'>talla</option>
+                            <option value="">grande</option>
+                            <option value="">mediana</option>
+                            <option value="">pequena</option>
+                    </select>
+                    <input class="formulario__campo  formulario__cantidad"  type="number" placeholder="cantidad" min="1" max="20"><br>
+                    <input type="submit" class="formulario__submit" value='agregar al carrito' >
+
+                </form>
+            </div>
             
         </main>
-
-        
-
 
         <footer class="footer">
             <p class="footer__text" >Front End Store - all rights reserved. XaviDev 2021... </p>
         </footer>
 
-
-
-
-
-</body>
+    </body>
 
 </html>
